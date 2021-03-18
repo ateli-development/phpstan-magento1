@@ -2,8 +2,6 @@
 
 Extension for [PHPStan](https://github.com/phpstan/phpstan) to allow analysis of Magento 1 code.
 
-Currently it assumes Magento is installed in the `htdocs/` directory of the project root. Further work is needed in phpstan itself to allow more intellegence for extensions to be more customised whilst working with both phpstan/phpstan and phpstan/phpstan-shim.
-
 ## Usage
 
 Add `phpstan.neon` to your Magento 1 project.
@@ -12,18 +10,18 @@ Make sure it has
 
 ```neon
 includes:
-    - vendor/vianetz/phpstan-magento1/extension.neon
+    - vendor/ateli-development/phpstan-magento1/extension.neon
 ```
 
 Then run
 
 ```bash
-composer require inviqa/phpstan-magento1 phpstan/phpstan
+composer require inviqa/phpstan-magento1:dev-ateli_compatibility phpstan/phpstan
 ```
 
 ## Alternative Magento path
 
-By default this extension assumes the Magento directory is `%currentWorkingDirectory%/htdocs`.
+By default this extension assumes the Magento directory is `%currentWorkingDirectory%`.
 
 Add to the project's phpstan.neon:
 

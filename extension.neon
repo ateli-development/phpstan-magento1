@@ -3,7 +3,7 @@ parameters:
         - */app/code/local/*/*/data/*
         - */app/code/local/*/*/sql/*
     bootstrapFiles:
-        - %currentWorkingDirectory%/htdocs/app/Mage.php
+        - %currentWorkingDirectory%/app/Mage.php
         - phpstan-bootstrap.php
     typeAliases:
         Mage_Catalog_Model_Entity_Product_Collection: 'Mage_Catalog_Model_Resource_Product_Collection'
