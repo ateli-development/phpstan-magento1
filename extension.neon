@@ -1,5 +1,5 @@
 parameters:
-    excludes_analyse:
+    excludePaths:
         - */app/code/local/*/*/data/*
         - */app/code/local/*/*/sql/*
     bootstrapFiles:
